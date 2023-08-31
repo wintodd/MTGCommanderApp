@@ -36,21 +36,26 @@ public class MainActivity extends AppCompatActivity {
         //assign the selected radio button to selectedRadioButton attribute with the id
         selectedRadioButton = (RadioButton)findViewById(selectedId);
 
-        if(selectedId == findViewById(R.id.player2RadioButton).getId()) {
+        switch (selectedId) {
+            case R.id.player2RadioButton:
+                //Creates an intent to launch new activity
+                Intent twoPlayerIntent = new Intent(this, TwoPlayerActivity.class);
 
-            //Creates an intent to launch new activity
-            Intent twoPlayerIntent = new Intent(this, TwoPlayerActivity.class);
-
-            //Start new Activity
-            startActivity(twoPlayerIntent);
-        } else {
-            if (selectedId == findViewById(R.id.player3RadioButton).getId()) {
+                //Start new Activity
+                startActivity(twoPlayerIntent);
+                break;
+            case R.id.player3RadioButton:
                 Intent threePlayerIntent = new Intent(this, ThreePlayerActivity.class);
                 startActivity(threePlayerIntent);
-            } else {
+                break;
+            case R.id.player4RadioButton:
                 Intent fourPlayerIntent = new Intent(this, FourPlayerActivity.class);
                 startActivity((fourPlayerIntent));
-            }
+                break;
+            case R.id.testPageRadioButton:
+                Intent testPageIntent = new Intent(this, TestActivity.class);
+                startActivity((testPageIntent));
+                break;
         }
 
     }
