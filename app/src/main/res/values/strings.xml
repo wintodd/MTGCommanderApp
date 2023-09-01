@@ -12,4 +12,6 @@
     <string name="commander_damage_tab_text">Commander Damage</string>
     <string name="health_tab_text">Health</string>
     <string name="cmd_dmg_text">CMD DMG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
