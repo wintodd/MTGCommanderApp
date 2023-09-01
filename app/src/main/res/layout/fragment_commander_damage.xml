@@ -16,13 +16,13 @@
         app:layout_constraintVertical_bias="0.5">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/opponentOneLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/subtractHealthButton"
+                android:id="@+id/opponentOneSubtractHealthButton"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -32,7 +32,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <EditText
-                android:id="@+id/heathEditText"
+                android:id="@+id/opponentOneHealth"
                 android:layout_width="88dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/addHealthButton"
+                android:id="@+id/opponentOneAddHealthButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -53,13 +53,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/opponentTwoLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/subtractHealthButton"
+                android:id="@+id/opponentTwoSubtractHealthButton"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -69,7 +69,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <EditText
-                android:id="@+id/heathEditText"
+                android:id="@+id/opponentTwoHealth"
                 android:layout_width="88dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,7 +82,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/addHealthButton"
+                android:id="@+id/opponentTwoAddHealthButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -90,13 +90,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/opponentThreeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/subtractHealthButton"
+                android:id="@+id/opponentThreeSubtractHealthButton"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -106,7 +106,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <EditText
-                android:id="@+id/heathEditText"
+                android:id="@+id/opponentThreeHealth"
                 android:layout_width="88dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -119,12 +119,13 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/addHealthButton"
+                android:id="@+id/opponentThreeAddHealthButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/add_health_button_text" />
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

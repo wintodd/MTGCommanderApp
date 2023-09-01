@@ -7,7 +7,7 @@
     tools:context=".VerticalPlayerFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/opponentOneLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -28,7 +28,7 @@
             tools:ignore="TextContrastCheck" />
 
         <EditText
-            android:id="@+id/heathEditText"
+            android:id="@+id/opponentOneHealth"
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

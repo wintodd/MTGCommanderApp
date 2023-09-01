@@ -29,7 +29,7 @@ public class VerticalPlayerFragment extends Fragment {
     public void onViewCreated(View v, Bundle savedInstanceState) {
         subtractHealthButton = (Button) v.findViewById(R.id.subtractHealthButton);
         addHealthButton = (Button) v.findViewById(R.id.addHealthButton);
-        playerHealthEditText = (EditText) v.findViewById(R.id.heathEditText);
+        playerHealthEditText = (EditText) v.findViewById(R.id.opponentOneHealth);
 
         /*
 
