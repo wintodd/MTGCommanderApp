@@ -16,19 +16,26 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorColor="@color/red">
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/healthTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health_tab_text" />
+                android:text="@string/health_tab_text"/>
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/commanderDamageTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/commander_damage_tab_text" />
+                android:text="@string/commander_damage_tab_text"/>
 
         </com.google.android.material.tabs.TabLayout>
 
