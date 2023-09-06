@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 public class PlayerHealthFragment extends Fragment {
     public PlayerHealthFragment() {
@@ -17,7 +17,7 @@ public class PlayerHealthFragment extends Fragment {
 
     Button subtractHealthButton;
     Button addHealthButton;
-    EditText playerHealthEditText;
+    TextView playerHealthTextView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,15 +35,15 @@ public class PlayerHealthFragment extends Fragment {
     public void onViewCreated(View v, Bundle savedInstanceState) {
         subtractHealthButton = (Button) v.findViewById(R.id.subtractHealthButton);
         addHealthButton = (Button) v.findViewById(R.id.addHealthButton);
-        playerHealthEditText = (EditText) v.findViewById(R.id.opponentOneHealth);
+        playerHealthTextView = (TextView) v.findViewById(R.id.opponentOneHealth);
 
         subtractHealthButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Change playerHealthEditText value from editable to int
-                int health = Integer.parseInt(String.valueOf(playerHealthEditText.getText()));
+                int health = Integer.parseInt(String.valueOf(playerHealthTextView.getText()));
                 if(health > 0) {
-                    playerHealthEditText.setText(String.valueOf(health - 1));
+                    playerHealthTextView.setText(String.valueOf(health - 1));
                 }
             }
         });
@@ -52,8 +52,8 @@ public class PlayerHealthFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //Change playerHealthEditText value from editable to int
-                int health = Integer.parseInt(String.valueOf(playerHealthEditText.getText()));
-                playerHealthEditText.setText(String.valueOf(health + 1));
+                int health = Integer.parseInt(String.valueOf(playerHealthTextView.getText()));
+                playerHealthTextView.setText(String.valueOf(health + 1));
             }
         });
 

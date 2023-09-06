@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView3"
-        android:name="com.example.mtgcommanderapp.HorizontalPlayerFragment"
+        android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,17 +28,18 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView4"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView5"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:rotation="180" />
+            android:rotation="90" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView5"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

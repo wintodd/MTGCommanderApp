@@ -19,7 +19,7 @@ public class ViewTabAdapter extends FragmentStateAdapter {
 
         switch (position) {
             case 0:
-                fragment = new HorizontalPlayerFragment();
+                fragment = new PlayerHealthFragment();
                 break;
             case 1:
                 fragment = new CommanderDamageFragment();

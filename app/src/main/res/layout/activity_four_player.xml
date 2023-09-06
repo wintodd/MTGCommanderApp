@@ -17,18 +17,19 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView6"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView7"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:rotation="180" />
+            android:rotation="90"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView7"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,18 +44,19 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView8"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView9"
-            android:name="com.example.mtgcommanderapp.VerticalPlayerFragment"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:rotation="180" />
+            android:rotation="90"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView9"
+            android:name="com.example.mtgcommanderapp.PlayerHealthFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="270" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
